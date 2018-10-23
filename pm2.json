@@ -1,0 +1,17 @@
+{
+    "apps": [{
+      "name": "server",
+      "script": "index.js",
+      "instances": 1,
+      "watch": true,
+      "exec_mode": "cluster",
+      "ignore_watch": [
+        "node_modules"
+      ],
+      "node_args": "--harmony",
+      "merge_logs": true,
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }]
+  }
