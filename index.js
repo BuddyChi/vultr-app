@@ -1,7 +1,7 @@
 const router = require('koa-router')
 const Koa = require('koa');
 const ejs = require('ejs');
-const config = NODE_ENV == 'production' ? require('./config/prod.js') : require('./config/dev.js');
+const config = require('./config/prod.js')
 const views = require('koa-views');
 const app = new Koa();
 
